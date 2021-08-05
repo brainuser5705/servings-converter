@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Servings Converter</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Servings converter</h1>
+
+        <form action="index.html" method="GET" id="form">
+            <label for="orig-servings">Number of servings: </label>
+            <input type="text" id="orig-servings"><br>
+            <label for="new-servings">New servings: </label>
+            <input type="text" id="new-servings"><br>
+
+            <hr>
+            <input type="button" value="+" onclick="addInput()">
+            <input type="button" value="-" onclick="subtractInput()">
+            <input type="button" value="Convert" onclick="getList()">
+            <!-- js will add ingredient inputs-->
+        </form>
+
+        <hr>
+
+        <div id="container">
+            <div>Converted Amounts</div>
+            <!-- after form submission, values will be populated -->
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
